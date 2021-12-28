@@ -12,6 +12,11 @@ function App() {
       expansedate:new Date(2021,2,24),
       expenseTitle:"School fee",
       expenseAmount:10
+    },
+    {
+      expansedate:new Date(2021,2,24),
+      expenseTitle:"Suniversity fee",
+      expenseAmount:10
     }
   ];
   return (
@@ -26,6 +31,11 @@ function App() {
       date={expenses[1].expansedate} 
       title={expenses[1].expenseTitle} 
       amount={expenses[1].expenseAmount} 
+    /> 
+    <ExpenseItem 
+      date={expenses[2].expansedate} 
+      title={expenses[2].expenseTitle} 
+      amount={expenses[2].expenseAmount} 
     /> 
     </div>
   );
