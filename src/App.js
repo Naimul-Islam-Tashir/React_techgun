@@ -1,5 +1,5 @@
 import './App.css';
-import ExpenseItem from './component/ExpenseItem';
+import Expenses from './component/Expenses/Expenses';
 
 function App() {
   let expenses=[
@@ -22,21 +22,7 @@ function App() {
   return (
     <div>
     <h1>hello tashir</h1>
-    <ExpenseItem 
-    date={expenses[0].expansedate} 
-    title={expenses[0].expenseTitle} 
-    amount={expenses[0].expenseAmount} 
-    />
-     <ExpenseItem 
-      date={expenses[1].expansedate} 
-      title={expenses[1].expenseTitle} 
-      amount={expenses[1].expenseAmount} 
-    /> 
-    <ExpenseItem 
-      date={expenses[2].expansedate} 
-      title={expenses[2].expenseTitle} 
-      amount={expenses[2].expenseAmount} 
-    /> 
+    <Expenses expensesArray={expenses} />
     </div>
   );
 }
